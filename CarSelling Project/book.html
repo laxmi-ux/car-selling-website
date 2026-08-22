@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Inspection Booking</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #6D5BBA, #8D58BF);
+            padding: 20px;
+        }
+
+        form {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 50%;
+            max-width: 420px;
+            transition: transform 0.3s;
+            height: 50%;
+        }
+
+        form:hover {
+            transform: scale(1.02);
+        }
+
+        label {
+            font-weight: 600;
+            color: #444;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+            transition: border 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #6D5BBA;
+            box-shadow: 0 0 8px rgba(109, 91, 186, 0.4);
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #6D5BBA;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #5d73b4;
+        }
+
+        @media (max-width: 480px) {
+            form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="book_inspection.php" method="POST">
+        <label for="user_name">Name:</label>
+        <input type="text" name="user_name" id="user_name" required>
+
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" id="phone" required>
+
+        <label for="Addresss">Address:</label>
+        <textarea name="Address" id="Address" required></textarea>
+
+        <label for="brand">Brand:</label>
+        <input type="text" name="brand" id="brand" required>
+
+        <label for="model">Model:</label>
+        <input type="text" name="model" id="model" required>
+
+        <label for="year">Year:</label>
+        <input type="text" name="year" id="year" required>
+
+        <label for="inspection_date">Inspection Date:</label>
+        <input type="date" name="inspection_date" id="inspection_date" required>
+
+        <label for="inspection_time">Inspection Time:</label>
+        <input type="time" name="inspection_time" id="inspection_time" required>
+
+        <button type="submit">Confirm Inspection</button>
+    </form>
+</body>
+</html>

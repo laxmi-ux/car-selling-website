@@ -1,0 +1,6 @@
+[
+    { "condition": "New Car", "brand": "BMW", "model": "3-Series", "year": 2023 , "mileage": "2000 Milies", "price": "$1,000-$5,000", "body": "Sedan" },
+    { "condition": "Used Car", "brand": "Nissan", "model": "G-TR", "year": 2020 },
+    { "condition": "New Car", "brand": "Hyundai", "model": "N-Series", "year": 2022 }
+  ]
+  
